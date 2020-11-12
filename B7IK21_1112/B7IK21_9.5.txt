@@ -1,0 +1,9 @@
+GRANT SELECT ON termekek TO peter 
+
+SELECT * FROM zoli.termekek; 
+
+CREATE VIEW tnevek AS SELECT nev FROM termekek 
+a következő utasítás is kell hozzá még
+GRANT SELECT ON tnevek TO PUBLIC 
+
+SELECT * FROM zoli.tnevek
