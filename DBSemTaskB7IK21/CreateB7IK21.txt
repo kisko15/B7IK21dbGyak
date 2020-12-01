@@ -1,0 +1,92 @@
+CREATE TABLE Sportuzlet (
+SportuzletID INT NOT NULL,
+Nyitva_tartas VARCHAR(20),
+Nev VARCHAR(30),
+Telefonszam NUMBER,
+Weboldal VARCHAR(40),
+PRIMARY KEY (SportuzletID)
+);
+
+CREATE TABLE Beszallito (
+BeszallitoID INT NOT NULL,
+Elerhetoseg VARCHAR(50),
+Nev VARCHAR(30),
+Varos VARCHAR(30),
+Iranyitoszam NUMBER,
+Utca VARCHAR(30),
+Hazszam NUMBER,
+PRIMARY KEY (BeszallitoID)
+);
+
+CREATE TABLE Beszallitas (
+BeszallitasID INT NOT NULL,
+Datum DATE,
+Futocipok VARCHAR(30),
+SportuzletID INT,
+BeszallitoID INT,
+PRIMARY KEY (BeszallitasID),
+FOREIGN KEY (SportuzletID) REFERENCES Sportuzlet(SportuzletID),
+FOREIGN KEY (BeszallitoID) REFERENCES Beszallito(BeszallitoID)
+);
+
+CREATE TABLE Kiszallito (
+KiszallitoID INT NOT NULL,
+Nev VARCHAR(30),
+Telefonszam INT,
+SportuzletID INT,
+PRIMARY KEY (KiszallitoID),
+FOREIGN KEY (SportuzletID) REFERENCES Sportuzlet(SportuzletID)
+);
+
+CREATE TABLE Futocipo (
+FutocipoID INT NOT NULL,
+Teljes_ar VARCHAR(7),
+Futocipo_neve VARCHAR(35),
+SportuzletID INT NOT NULL,
+PRIMARY KEY (FutocipoID),
+FOREIGN KEY (SportuzletID) REFERENCES Sportuzlet(SportuzletID)
+);
+
+CREATE TABLE Vasarlo (
+VasarloID INT NOT NULL,
+Nev VARCHAR(30),
+Telefonszam INT,
+Varos VARCHAR(30),
+Iranyitoszam NUMBER,
+Utca VARCHAR(30),
+Hazszam NUMBER,
+PRIMARY KEY (VasarloID)
+);
+
+CREATE TABLE Bankkartya (
+Kartyaszam VARCHAR(16) NOT NULL,
+Bank VARCHAR(30),
+Lejarati_datum DATE,
+Tipus VARCHAR(20),
+VasarloID INT,
+PRIMARY KEY (Kartyaszam),
+FOREIGN KEY (VasarloID) REFERENCES Vasarlo(VasarloID)
+);
+
+CREATE TABLE Szin (
+Szin VARCHAR(25),
+FutocipoID INT,
+PRIMARY KEY (Szin),
+FOREIGN KEY (FutocipoID) REFERENCES Futocipo(FutocipoID)
+);
+
+CREATE TABLE Meret (
+Meret VARCHAR(5),
+FutocipoID INT,
+PRIMARY KEY (Meret),
+FOREIGN KEY (FutocipoID) REFERENCES Futocipo(FutocipoID)
+);
+
+CREATE TABLE Vasarlas (
+VasarlasID INT NOT NULL,
+FutocipoID INT,
+VasarloID INT,
+PRIMARY KEY (VasarlasID),
+FOREIGN KEY (FutocipoID) REFERENCES Futocipo(FutocipoID),
+FOREIGN KEY (VasarloID) REFERENCES Vasarlo(VasarloID)
+);

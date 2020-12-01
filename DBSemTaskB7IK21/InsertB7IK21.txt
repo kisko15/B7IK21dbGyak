@@ -1,0 +1,373 @@
+BEGIN
+
+INSERT INTO Sportuzlet VALUES
+('1', '10-tól 16-ig', 'Decathlon', '301234235', 'decathlon.hu');
+INSERT INTO Sportuzlet VALUES
+('2', '8-tól 16-ig', 'Nyúlcipőbolt', '309861843', 'nyulcipo.hu');
+INSERT INTO Sportuzlet VALUES
+('3', '9-tól 14-ig', 'Spuri futóbolt', '701264827', 'spurifutobolt.hu');
+INSERT INTO Sportuzlet VALUES
+('4', '8-tól 14-ig', 'Hervis', '309799657', 'hervis.hu');
+INSERT INTO Sportuzlet VALUES
+('5', '7-tól 17-ig', 'Sportsdirect', '203901804', 'sportsdirect.com');
+INSERT INTO Sportuzlet VALUES
+('6', '8-tól 18-ig', 'Maratonman DEPO', '309789665', 'maratonman.hu');
+INSERT INTO Sportuzlet VALUES
+('7', '6-tól 19-ig', 'Flou Running futóbolt', '206793755', 'flourunning.hu');
+INSERT INTO Sportuzlet VALUES
+('8', '7-tól 20-ig', 'Sarkcsillag Sportbolt', '309733412', 'sarkcsillag.hu');
+INSERT INTO Sportuzlet VALUES
+('9', '8-tól 21-ig', 'Nomád Sport', '301252223', 'nomad.hu');
+INSERT INTO Sportuzlet VALUES
+('10', '9-tól 17-ig', 'High-Lander', '701276558', 'highlander.com');
+INSERT INTO Sportuzlet VALUES
+('11', '8-tól 18-ig', 'Zergesport', '303323340', 'zergesport.hu');
+INSERT INTO Sportuzlet VALUES
+('12', '11-tól 19-ig', 'Mountex', '304443454', 'mountex.hu');
+INSERT INTO Sportuzlet VALUES
+('13', '8-tól 19-ig', 'BestSport', '201152036', 'bestsport.hu');
+INSERT INTO Sportuzlet VALUES
+('14', '8-tól 20-ig', 'Nike Márkabolt', '307726989', 'nikemarkabolt.hu');
+INSERT INTO Sportuzlet VALUES
+('15', '10-tól 16-ig', 'Naszály Sport', '303476121', 'naszalysport.hu');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Beszallito VALUES
+('1', '308456239', 'Nyúlcipőbolt', 'Szeged', '6700', 'Andrássy Gyula utca', '21' );
+INSERT INTO Beszallito VALUES
+('2', '703526476', 'Dechatlon', 'Miskolc', '3526', 'József Attila utca', '17' );
+INSERT INTO Beszallito VALUES
+('3', '204672974', 'Spuribolt', 'Budapest', '1031', 'Bodrogi Lajos utca', '45' );
+INSERT INTO Beszallito VALUES
+('4', '303728345', 'Futnikellmost', 'Kecskemét', '6008', 'Tököli András utca', '3' );
+INSERT INTO Beszallito VALUES
+('5', '701239647', 'Shoes', 'Szeged', '6730', 'Kázmér István utca', '31' );
+INSERT INTO Beszallito VALUES
+('6', '209283746', 'Szaladok', 'Miskolc', '3523', 'Fő utca', '67' );
+INSERT INTO Beszallito VALUES
+('7', '305655387', 'Loholás', 'Győr', '9025', 'Kalocsai József utca', '49' );
+INSERT INTO Beszallito VALUES
+('8', '201230100', 'Nincsmegállás', 'Szeged', '6710', 'Mákos Guba utca', '32' );
+INSERT INTO Beszallito VALUES
+('9', '702967859', 'Futnóélet', 'Miskolc', '3521', 'Fő utca', '6' );
+INSERT INTO Beszallito VALUES
+('10', '303433767', 'Sprintelők', 'Lajosmizse', '6050', 'Pátkai Ádám utca', '77' );
+INSERT INTO Beszallito VALUES
+('11', '702210321', 'Running', 'Budapest', '1045', 'Jókai Mór utca', '12' );
+INSERT INTO Beszallito VALUES
+('12', '701234567', 'Runners', 'Szeged', '6740', 'Petőfi Sándor utca', '18' );
+INSERT INTO Beszallito VALUES
+('13', '307336401', 'Bajnokok', 'Miskolc', '3517', 'Arany János utca', '30' );
+INSERT INTO Beszallito VALUES
+('14', '702343451', 'Cipőbolt', 'Budapest', '1033', 'Mikszáth Kálmán utca', '26' );
+INSERT INTO Beszallito VALUES
+('15', '301010231', 'BestCipő', 'Győr', '9035', 'Radnóti Miklós utca', '52' );
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Beszallitas VALUES
+('1', '2020-12-03', 'Nike', '5', '7');
+INSERT INTO Beszallitas VALUES
+('2', '2020-12-04', 'Adidas', '4', '10');
+INSERT INTO Beszallitas VALUES
+('3', '2020-12-05', 'Hoka', '1', '2');
+INSERT INTO Beszallitas VALUES
+('4', '2020-12-06', 'Salamon', '11', '14');
+INSERT INTO Beszallitas VALUES
+('5', '2020-12-07', 'Asics', '7', '8');
+INSERT INTO Beszallitas VALUES
+('6', '2020-12-08', 'Brooks', '12', '9');
+INSERT INTO Beszallitas VALUES
+('7', '2020-12-09', 'Inov', '2', '2');
+INSERT INTO Beszallitas VALUES
+('8', '2020-12-10', 'Kalenji', '6', '5');
+INSERT INTO Beszallitas VALUES
+('9', '2020-12-11', 'Mizuno', '5', '4');
+INSERT INTO Beszallitas VALUES
+('10', '2020-12-12', 'Saucony', '15', '10');
+INSERT INTO Beszallitas VALUES
+('11', '2020-12-13', 'New Balance', '3', '4');
+INSERT INTO Beszallitas VALUES
+('12', '2020-12-14', 'On', '4', '9');
+INSERT INTO Beszallitas VALUES
+('13', '2020-12-15', 'Puma', '11', '15');
+INSERT INTO Beszallitas VALUES
+('14', '2020-12-16', 'Reebok', '14', '7');
+INSERT INTO Beszallitas VALUES
+('15', '2020-12-17', 'Under Armour', '11', '1');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Kiszallito VALUES
+('1' , 'Nagy Endre' , '301974832' , '6');
+INSERT INTO Kiszallito VALUES
+('2' , 'Nagy Mihály' , '302784011' , '4');
+INSERT INTO Kiszallito VALUES
+('3' , 'Kerekes Béla' , '309954856' , '1');
+INSERT INTO Kiszallito VALUES
+('4' , 'Ferenci Márk' , '202510238' , '5');
+INSERT INTO Kiszallito VALUES
+('5' , 'Bodó Tibor' , '306482915' , '6');
+INSERT INTO Kiszallito VALUES
+('6' , 'Fónagy János' , '702451946' , '2');
+INSERT INTO Kiszallito VALUES
+('7' , 'Néhai Ödön' , '305701021' , '3');
+INSERT INTO Kiszallito VALUES
+('8' , 'Fürge Ábel' , '303967823' , '8');
+INSERT INTO Kiszallito VALUES
+('9' , 'Lengyel Máté' , '206295447' , '3');
+INSERT INTO Kiszallito VALUES
+('10' , 'Somogyi István' , '306544844' , '7');
+INSERT INTO Kiszallito VALUES
+('11' , 'Madarász Éva' , '303321116' , '4');
+INSERT INTO Kiszallito VALUES
+('12' , 'Rákosi Mihály' , '701385612' , '2');
+INSERT INTO Kiszallito VALUES
+('13' , 'Vágó Géza' , '303452856' , '9');
+INSERT INTO Kiszallito VALUES
+('14' , 'Almási Nándor' , '702548123' , '5');
+INSERT INTO Kiszallito VALUES
+('15' , 'Endrész Júlia' , '304500103' , '1');
+
+END
+
+
+
+
+BEGIN 
+
+INSERT INTO Futocipo VALUES
+('1', '13500', 'Asics Gel-Nimbus 22 Modern Tokyo', '4');
+INSERT INTO Futocipo VALUES
+('2', '32500', 'Saucony Guide 13', '2');
+INSERT INTO Futocipo VALUES
+('3', '32500', 'Hoka Rincon', '5');
+INSERT INTO Futocipo VALUES
+('4', '42500', 'Under Armour HOVR Machina', '7');
+INSERT INTO Futocipo VALUES
+('5', '26000', 'Under Armour HOVR Machina', '6');
+INSERT INTO Futocipo VALUES
+('6', '33000', 'Brooks PR LD 3', '1');
+INSERT INTO Futocipo VALUES
+('7', '37500', 'Adidas Solar Glide ST', '3');
+INSERT INTO Futocipo VALUES
+('8', '44500', 'Skechers GoMeb Razor 2', '6');
+INSERT INTO Futocipo VALUES
+('9', '46500', 'Hoka Gaviota 2', '8');
+INSERT INTO Futocipo VALUES
+('10', '49500', 'Hoka Clifton 6', '2');
+INSERT INTO Futocipo VALUES
+('11', '50500', 'Salomon Predict RA', '4');
+INSERT INTO Futocipo VALUES
+('12', '36500', 'Asics Noosa FF 2', '3');
+INSERT INTO Futocipo VALUES
+('13', '26000', 'Asics Gel-Kayano 26', '9');
+INSERT INTO Futocipo VALUES
+('14', '29500', 'Hoka Arahi 3', '7');
+INSERT INTO Futocipo VALUES
+('15', '30500', 'Asics GT-1000 8', '8');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Vasarlo VALUES
+('1', 'Kovács Sándor', '702351474', 'Miskolc', '3517', 'Nefelejcs utca', '5');
+INSERT INTO Vasarlo VALUES
+('2', 'Németh Szilárd', '309929373', 'Miskolc', '3513', 'Jánosi utca', '12');
+INSERT INTO Vasarlo VALUES
+('3', 'Nagy Éva', '203425474', 'Edelény', '3780', 'Dankó Pista utca', '23');
+INSERT INTO Vasarlo VALUES
+('4', 'Fehér Mátyás', '305012410', 'Budapest', '1043', 'Kék Ibolya utca', '45');
+INSERT INTO Vasarlo VALUES
+('5', 'Bóta Bálint', '705949712', 'Eszterom', '2508', 'Török Bálint utca', '41');
+INSERT INTO Vasarlo VALUES
+('6', 'Pásztor János', '301232341', 'Eger', '3300', 'Mogyoró utca', '18');
+INSERT INTO Vasarlo VALUES
+('7', 'Kovács Éva', '202351474', 'Kazincbarcika', '3700', 'Kálai Kettős utca', '33');
+INSERT INTO Vasarlo VALUES
+('8', 'Pünkösdi Ferenc', '703757477', 'Miskolc', '3522', 'Fő utca', '7');
+INSERT INTO Vasarlo VALUES
+('9', 'Oszkár Tivadar', '302001241', 'Pécs', '7630', 'Mihály utca', '79');
+INSERT INTO Vasarlo VALUES
+('10', 'Vámosi Oszkár', '301976745', 'Miskolc', '3527', 'Bodrogi Ernő utca', '25');
+INSERT INTO Vasarlo VALUES
+('11', 'Molnár Adrián', '201232312', 'Miskolc', '3537', 'Király utca', '32');
+INSERT INTO Vasarlo VALUES
+('12', 'Nadanicsek Jordán', '307689899', 'Budapest', '1023', 'Andrássy utca', '1');
+INSERT INTO Vasarlo VALUES
+('13', 'Iváncsik Gergely', '705362636', 'Miskolc', '3512', 'Magyar Nábob utca', '29');
+INSERT INTO Vasarlo VALUES
+('14', 'Pintér Kornél', '302131287', 'Békéscsaba', '5600', 'Ybl Miklós utca', '10');
+INSERT INTO Vasarlo VALUES
+('15', 'Kiss Bianka', '309978901', 'Debrecen', '4030', 'Király utca', '27');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Bankkartya VALUES
+('0543342544523453', 'OTP', '2023-11-12', 'hitelkártya', '3');
+INSERT INTO Bankkartya VALUES
+('6629746255628561', 'OTP', '2022-11-17', 'bérleti kártya', '5');
+INSERT INTO Bankkartya VALUES
+('0508362948564452', 'MKB', '2021-12-28', 'hitelkártya', '1');
+INSERT INTO Bankkartya VALUES
+('0346346234532461', 'OTP', '2024-11-08', 'hitelkártya', '10');
+INSERT INTO Bankkartya VALUES
+('1032636623463246', 'CIB Bank', '2027-12-18', 'többfunkciós kártya', '12');
+INSERT INTO Bankkartya VALUES
+('2368126623463246', 'CIB Bank', '2026-12-21', 'bérleti kártya', '6');
+INSERT INTO Bankkartya VALUES
+('0256237638349311', 'OTP', '2023-11-11', 'bérleti kártya', '15');
+INSERT INTO Bankkartya VALUES
+('0123485411436352', 'MKB', '2022-12-22', 'hitelkártya', '4');
+INSERT INTO Bankkartya VALUES
+('0346234639963246', 'MKB', '2022-04-01', 'többfunkciós kártya', '10');
+INSERT INTO Bankkartya VALUES
+('1205485487436352', 'OTP', '2022-09-30', 'hitelkártya', '5');
+INSERT INTO Bankkartya VALUES
+('0072463211113463', 'OTP', '2023-10-27', 'hitelkártya', '7');
+INSERT INTO Bankkartya VALUES
+('2231495261464745', 'CIB Bank', '2024-11-07', 'bérleti kártya', '8');
+INSERT INTO Bankkartya VALUES
+('0012395261223366', 'CIB Bank', '2025-12-20', 'bérleti kártya', '9');
+INSERT INTO Bankkartya VALUES
+('9283715261256455', 'OTP', '2025-10-10', 'többfunkciós kártya', '15');
+INSERT INTO Bankkartya VALUES
+('0077235261254444', 'MKB', '2022-01-15', 'hitelkártya', '6');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Szin VALUES
+('szürke', '2');
+INSERT INTO Szin VALUES
+('kék', '6');
+INSERT INTO Szin VALUES
+('zöld', '10');
+INSERT INTO Szin VALUES
+('narancssárga', '1');
+INSERT INTO Szin VALUES
+('citromsárga', '11');
+INSERT INTO Szin VALUES
+('bordó', '3');
+INSERT INTO Szin VALUES
+('rózsaszín', '15');
+INSERT INTO Szin VALUES
+('fehér', '13');
+INSERT INTO Szin VALUES
+('fekete', '7');
+INSERT INTO Szin VALUES
+('lila', '8');
+INSERT INTO Szin VALUES
+('piros', '5');
+INSERT INTO Szin VALUES
+('türkizkék', '7');
+INSERT INTO Szin VALUES
+('barna', '11');
+INSERT INTO Szin VALUES
+('ibolya', '9');
+INSERT INTO Szin VALUES
+('lenszőke', '4');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Meret VALUES
+('36', '3');
+INSERT INTO Meret VALUES
+('37', '4');
+INSERT INTO Meret VALUES
+('38', '6');
+INSERT INTO Meret VALUES
+('39', '10');
+INSERT INTO Meret VALUES
+('40', '1');
+INSERT INTO Meret VALUES
+('41', '13');
+INSERT INTO Meret VALUES
+('42', '12');
+INSERT INTO Meret VALUES
+('43', '15');
+INSERT INTO Meret VALUES
+('44', '3');
+INSERT INTO Meret VALUES
+('45', '8');
+INSERT INTO Meret VALUES
+('46', '6');
+
+END
+
+
+
+
+BEGIN
+
+INSERT INTO Vasarlas VALUES
+('1', '4', '2');
+INSERT INTO Vasarlas VALUES
+('2', '3', '7');
+INSERT INTO Vasarlas VALUES
+('3', '5', '12');
+INSERT INTO Vasarlas VALUES
+('4', '2', '10');
+INSERT INTO Vasarlas VALUES
+('5', '6', '6');
+INSERT INTO Vasarlas VALUES
+('6', '1', '9');
+INSERT INTO Vasarlas VALUES
+('7', '8', '3');
+INSERT INTO Vasarlas VALUES
+('8', '2', '13');
+INSERT INTO Vasarlas VALUES
+('9', '8', '15');
+INSERT INTO Vasarlas VALUES
+('10', '6', '7');
+INSERT INTO Vasarlas VALUES
+('11', '5', '8');
+INSERT INTO Vasarlas VALUES
+('12', '4', '10');
+INSERT INTO Vasarlas VALUES
+('13', '8', '11');
+INSERT INTO Vasarlas VALUES
+('14', '1', '2');
+INSERT INTO Vasarlas VALUES
+('15', '7', '1');
+
+END
+
+
+
+
+

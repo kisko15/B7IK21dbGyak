@@ -1,0 +1,39 @@
+1.	A Vasarlo táblából kilistázza a Neveket és a Telefonszámokat.
+	SELECT Nev, Telefonszam FROM Vasarlo;
+	π Nev, Telefonszam Vasarlo
+
+2.	Kilistázza a Futócipő neve alapján a minimum összeget, maximum összeget és az átlagos összeget.
+	SELECT MIN(Teljes_ar), MAX(Teljes_ar), AVG(Teljes_ar) FROM Futocipo GROUP BY Futocipo_neve;
+	Γ Futocipo_neve min(Teljes_ar), max(Teljes_ar), avg(Teljes_ar) Futocipo
+
+3.	Kilistázza azokat a Futócipőknek a nevét, amelyek az átlagosnál drágábbak.
+	SELECT Futocipo_neve FROM Futocipo WHERE Teljes_ar > (SELECT AVG(Teljes_ar) FROM Futocipo);
+	π Futocipo_neve σ Teljes_ar>avg(Teljes_ar) Futocipo
+
+4.	Összeszámolja, hogy hány db különböző beszállító van.
+	SELECT COUNT(DISTINCT BeszallitoID) FROM Beszallito;
+	Γ count(*) (BeszallitoID)
+
+5.	A Futócipő táblában megszámolja azokat a Futócipőket, amelyek drágábbak 40000Ft-nál
+	SELECT COUNT(Teljes_ar) FROM Futocipo WHERE Teljes_ar > 40000;
+	σ Teljes_ar>1000  [ Γ count(Teljes_ar) ]
+
+6.	A Futócipők adatainak kilistázása, amelyek 25000Ft-nál olcsóbbak.
+	SELECT * FROM Futocipo WHERE Teljes_ar<’25000’;
+	σ Teljes_ar < '25000' Futocipo
+
+7.	Azoknak a Futócipőknek a nevét listázza ki, amelynek az ára 35000 és 40000Ft között van.
+	SELECT Futocipo_neve FROM Futocipo WHERE Teljes_ar BETWEEN 35000 AND 40000;
+	π Futocipo σ Teljes_ar < 40000 Futocipo \ π Futocipo σ Teljes_ar < 35000 Futocipo
+
+8.	Kilistázza azokat a Hervis nevű Sportüzleteket, amelyek 8-tól 14-ig vannak nyitva.
+	SELECT SportuzletID FROM Sportuzlet WHERE Nyitva_tartas=’8-tól 14-ig’ AND Nev=’Hervis’;
+	σ Nyitva_tartas=’8-tól 14-ig' AND Nev=’Hervis’ Sportuzlet
+
+9.	Kilistázza a vásárló kártyájának kártyaszámát és a lejárati dátumát, ha a vásárló a 12-es házszámban lakik.
+	SELECT Kartyaszam, Lejarati_datum FROM Bankkartya B INNER JOIN Vasarlo V ON B.Kartyaszam=V.VasarloID WHERE Hazszam=12;
+	π Kartyaszam, Lejarati_datum  σ Hazszam=12 Bankkartya ⨝ Bankkartya.Kartyaszam = Vasarlo.VasarloID Vasarlo
+
+10.	Kilistázza bármely 42-es méretű futócipő áránál drágább futócipő nevét.
+	SELECT Futocipo_neve FROM Futocipo WHERE Teljes_ar > ANY (SELECT Teljes_ar FROM Futocipo F LEFT OUTER JOIN Meret M ON F.FutocipoID=M.Meret WHERE Meret=42);
+	π Futocipo_neve σ Teljes_ar > ( π Teljes_ar σ Meret=42 Futocipo) Futocipo
