@@ -31,9 +31,10 @@
 	σ Nyitva_tartas=’8-tól 14-ig' AND Nev=’Hervis’ Sportuzlet
 
 9.	Kilistázza a vásárló kártyájának kártyaszámát és a lejárati dátumát, ha a vásárló a 12-es házszámban lakik.
-	SELECT Kartyaszam, Lejarati_datum FROM Bankkartya B INNER JOIN Vasarlo V ON B.Kartyaszam=V.VasarloID WHERE Hazszam=12;
-	π Kartyaszam, Lejarati_datum  σ Hazszam=12 Bankkartya ⨝ Bankkartya.Kartyaszam = Vasarlo.VasarloID Vasarlo
+	Kartyaszam, B.Lejarati_datum FROM Vasarlo V INNER JOIN Bankkartya B ON V.VasarloID=B.VasarloID WHERE Hazszam = 30;
+	π B.Kartyaszam, B.Lejarati_datum  σ Hazszam=30 Vasarlo V ⨝ V.VasarloID=B.VasarloID Bankkartya B
 
 10.	Kilistázza bármely 42-es méretű futócipő áránál drágább futócipő nevét.
-	SELECT Futocipo_neve FROM Futocipo WHERE Teljes_ar > ANY (SELECT Teljes_ar FROM Futocipo F LEFT OUTER JOIN Meret M ON F.FutocipoID=M.Meret WHERE Meret=42);
-	π Futocipo_neve σ Teljes_ar > ( π Teljes_ar σ Meret=42 Futocipo) Futocipo
+	SELECT Futocipo_neve FROM Futocipo WHERE Teljes_ar > ANY (SELECT Teljes_ar FROM Futocipo F LEFT OUTER JOIN Meret M ON F.FutocipoID=M. FutocipoID WHERE Meret=42);
+	π Futocipo_neve σ Teljes_ar > ( π Teljes_ar σ Meret=42 Futocipo F ⨝ F.FutocipoID=M. FutocipoID Meret M) Futocipo
+
